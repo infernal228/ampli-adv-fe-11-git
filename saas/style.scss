@@ -1,0 +1,720 @@
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url(../Fonts/Gilroy-Bold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url(../Fonts/Gilroy-Medium.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  display: flex;
+  flex-flow: column;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.mob-span {
+  display: none;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.menu-list {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list-item {
+  font-family: "Gilroy Bold";
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.active {
+  color: #070707;
+}
+
+hr {
+  width: 970px;
+  border: 1px solid #828282;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.name {
+  font-family: "Gilroy Bold";
+  font-size: 47.3392px;
+  line-height: 59px;
+  width: 33.33%;
+}
+
+.info {
+  font-family: "Gilroy Medium";
+  font-size: 20px;
+  line-height: 22px;
+  width: 33.33%;
+  text-align: center;
+}
+
+.language-switcher {
+  font-family: "Gilroy Bold";
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  width: 33.33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.language-switcher p {
+  transform: rotate(-90deg);
+}
+
+.hero-image {
+  padding: 40px 0;
+}
+
+.main-info {
+  width: 100%;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me {
+  text-align: center;
+  padding: 100px;
+}
+
+.about-me h1 {
+  font-family: "Gilroy Bold";
+  font-size: 34px;
+  line-height: 42px;
+  color: #070707;
+}
+
+.about-me p {
+  font-family: "Gilroy Medium";
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+  padding: 30px;
+}
+
+.sec-info {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  padding: 50px;
+}
+
+.sec-text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
+  padding: 50px;
+}
+
+.sec-text h1 {
+  font-family: "Gilroy Bold";
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 70px;
+}
+
+.sec-text h2 {
+  font-family: "Gilroy Medium";
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+.wrapper-skills {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill div {
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 18px;
+  letter-spacing: 10px;
+  color: #2e2c2c;
+}
+
+.html-image {
+  width: 120px;
+  height: 120px;
+}
+
+.css-image {
+  width: 80px;
+  height: 120px;
+}
+
+.js-image {
+  width: 120px;
+  height: 120px;
+}
+
+.q-image {
+  width: 120px;
+  height: 120px;
+}
+
+.skill {
+  text-align: center;
+}
+
+.sec-port {
+  background: #f6f6f6;
+}
+
+.port-text {
+  text-align: center;
+  font-family: "Gilroy Bold";
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 40px;
+}
+
+.wrapper-port {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+.port-img {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.port-links {
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Gilroy Medium";
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.wrapper-contacts {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.first-block {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.first-block h1 {
+  font-family: "Gilroy Bold";
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  padding: 20px;
+}
+
+.first-block p {
+  font-family: "Gilroy Medium";
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding: 50px;
+}
+
+.first-block button {
+  height: 36px;
+  width: 160px;
+  border-radius: 50px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Gilroy Bold";
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.first-block button:focus {
+  outline: none;
+}
+
+.sec-block {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 100px;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: black;
+}
+
+.contacts i {
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+.sec-block p {
+  font-family: "Gilroy Medium";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    width: 680px;
+  }
+  .hero-image {
+    width: 680px;
+  }
+  hr {
+    width: 680px;
+  }
+
+  .about-me {
+    padding: 50px;
+  }
+
+  .about-me p {
+    font-family: "Gilroy Medium";
+    padding: 20px;
+  }
+
+  .sec-text {
+    padding: 30px;
+  }
+
+  .wrapper-skills {
+    padding: 50px;
+  }
+
+  .sec-text h1 {
+    margin-bottom: 40px;
+  }
+
+  .sec-text h2 {
+    margin-top: 10px;
+  }
+
+  .skill div {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-top: 50px;
+  }
+
+  .html-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .css-image {
+    width: 60px;
+    height: 90px;
+  }
+
+  .js-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .q-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .port-text {
+    margin-bottom: 20px;
+  }
+
+  .wrapper-skills {
+    padding: 80px;
+  }
+
+  .port-img {
+    padding: 35px;
+  }
+
+  .port-img img {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .overlay a {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .mob-span {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .name {
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  .info {
+    padding: 10px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    width: 580px;
+    text-align: center;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .language-switcher {
+    display: none;
+  }
+
+  .about-me {
+    padding: 50px;
+  }
+
+  .about-me p {
+    font-size: 18px;
+    font-family: "Gilroy Medium";
+    padding: 22px;
+  }
+
+  .sec-text {
+    padding: 15px;
+  }
+
+  .wrapper-skills {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .sec-text h1 {
+    margin-bottom: 20px;
+  }
+
+  .sec-text h2 {
+    margin-top: 5px;
+  }
+
+  .skill div {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding: 20px;
+  }
+
+  .skill {
+    padding: 20px;
+  }
+
+  .html-image {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .css-image {
+    width: 60px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .js-image {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .q-image {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .wrapper-port {
+    padding: 0;
+  }
+
+  .port-text {
+    margin-bottom: 10px;
+  }
+
+  .port-img img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .sec-block {
+    padding: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .mob-span {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .name {
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  .info {
+    padding: 10px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    width: 580px;
+    text-align: center;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .language-switcher {
+    display: none;
+  }
+
+  .about-me {
+    padding: 20px 20px;
+    width: 100%;
+  }
+
+  .about-me p {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: "Gilroy Medium";
+  }
+
+  .sec-text {
+    padding: 15px;
+  }
+
+  .wrapper-skills {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .sec-text h1 {
+    margin-bottom: 20px;
+  }
+
+  .sec-text h2 {
+    margin-top: 5px;
+  }
+
+  .skill div {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding: 20px;
+  }
+
+  .skill {
+    padding: 20px;
+  }
+
+  .html-image {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .css-image {
+    width: 60px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .js-image {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .q-image {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .wrapper-port {
+    padding: 0;
+  }
+
+  .port-text {
+    margin-bottom: 10px;
+  }
+
+  .port-img img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sec-block {
+    padding: 100px;
+  }
+
+  .first-block p {
+    padding: 20px 20px;
+  }
+
+  .contacts i {
+    padding: 20px;
+  }
+}

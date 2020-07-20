@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About me</title>
+  <link rel="stylesheet" href="./saas/style.css" />
+  <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+</head>
+
+<body>
+  <div id="page">
+    <div class="container">
+      <header>
+        <div id="myNavMob" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">Home</a>
+            <a onclick=" slowScroll('#aboutme')">About me</a>
+            <a onclick=" slowScroll('#skills')">Skills</a>
+            <a onclick=" slowScroll('#portfolio')">Portfolio</a>
+            <a onclick=" slowScroll('#contacts')">Contacts</a>
+          </div>
+        </div>
+        <span class="mob-span" style="font-size: 30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+        <nav>
+          <ul class="menu-list">
+            <li class="menu-list-item active">
+              Home
+            </li>
+            <li class="menu-list-item">
+              <a onclick=" slowScroll('#aboutme')">About me</a>
+            </li>
+            <li class="menu-list-item">
+              <a onclick=" slowScroll('#skills')">Skills</a>
+            </li>
+            <li class="menu-list-item">
+              <a onclick=" slowScroll('#portfolio')">Portfolio</a>
+            </li>
+            <li class="menu-list-item">
+              <a onclick=" slowScroll('#contacts')">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <div class="hero">
+          <p class="name">
+            Daniel <br />
+            Angelov
+          </p>
+          <p class="info">
+            Front-end Developer <br />
+            15 years old, Lviv
+          </p>
+          <div class="language-switcher">
+            <p>UA | EN</p>
+          </div>
+        </div>
+        <div>
+          <img class="hero-image" src="./Images/hero-image.jpg" width="980px" alt="" />
+        </div>
+    </div>
+    </header>
+    <section class="main-info">
+      <div class="container">
+        <div id="aboutme" class="about-me">
+          <h1>About Me</h1>
+          <p>Hi, I`m Daniel - Front-end Developer from Ukraine, Lviv. <br> Study at the Lyceum №37. I train boxing,
+            swimming and going to the gym.</p>
+          <p> In my freetime I like playing video games.</p>
+          <p>I graduated from School "Creative" <br>
+            "IT School Ampli" - Game Developer course. <br>
+            Currently - "IT School Ampli" - Front-End Developer.</p>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="sec-info">
+      <div class="container">
+        <div class="sec-text">
+          <h1>Skills</h1>
+          <h2>I work with</h2>
+        </div>
+        <div class="wrapper-skills">
+          <div class="skill">
+            <img class="html-image" src="./Images/html.png" alt="">
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="skill">
+            <img class="css-image" src="./Images/CSS3.png" alt="">
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="skill">
+            <img class="js-image" src="./Images/js.png" alt="">
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="skill">
+            <img class="q-image" src="./Images/jquery.png" alt="">
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="sec-port">
+      <div class="container">
+        <div class="wrapper-port">
+          <div class="port-img">
+            <h1 class="port-text">Portfolio</h1>
+            <img src="./Images/cat.png" width="900px" alt="">
+            <a class="port-links" href="https://infernal228.github.io/Cats/">About Cats</a>
+          </div>
+          <div class="port-img">
+            <img src="./Images/th.png" width="900px" alt="">
+            <a class="port-links" href="https://infernal228.github.io/Bootstrap-Components-Week-14-/">About Tobacco</a>
+          </div>
+          <div class="port-img">
+            <img src="./Images/mod.png" width="900px" alt="">
+            <p class="port-links">MODNIKKY - In progress...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contacts" class="foot-info">
+      <div class="container">
+        <div class="wrapper-contacts">
+          <div class="first-block">
+            <h1>Contacts</h1>
+            <p>Want to know more or just chat? <br>
+              You are welcome!</p>
+            <button>Send message</button>
+          </div>
+          <div class="sec-block">
+            <div class="contacts">
+              <a href="https://www.instagram.com/a_daniel.24/?hl=ru"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/Daniel56534392"><i class="fab fa-twitter"></i></a>
+              <a href="https://steamcommunity.com/id/infernal24/"><i class="fab fa-steam-symbol"></i></a>
+            </div>
+            <p>Like me on <br> Instagram, Twitter, Steam</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("myNavMob").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNavMob").style.width = "0%";
+    }
+  </script>
+  <script>
+    function slowScroll(id) {
+      var offset = 0;
+      $('html,body').animate({
+        scrollTop: $(id).offset().top - offset
+      }, 1000);
+      return false;
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
